@@ -70,7 +70,15 @@ export default function Download(){
                 </div>
             </div>
                 <div className={styles.blockAds}>
-
+                    <ins
+                        className="adsbygoogle"
+                        style={{ display: "block" }}
+                        data-ad-client="ca-pub-2589071339817154"
+                        data-ad-slot="auto" // Pode deixar "auto" ou usar um slot específico
+                        data-ad-format="auto"
+                        data-full-width-responsive="true"
+                    ></ins>
+                    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
                 </div>
             <Footer />
         </div>
