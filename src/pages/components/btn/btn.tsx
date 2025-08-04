@@ -6,7 +6,7 @@ type downloadButtonProp = {
     prop?: ButtonHTMLAttributes<HTMLButtonElement>
 }
 
-export function BtnDownload({children, prop } : downloadButtonProp){
+export default function BtnDownload({children, prop } : downloadButtonProp){
     return(
         <>
             <button type="submit" {...prop} className={styles.downloadButton}>{children}</button>

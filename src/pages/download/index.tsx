@@ -1,5 +1,5 @@
-import { BtnDownload } from '../components/btn/btn'
-import { Footer } from '../components/footer/footer'
+import  BtnDownload  from '../components/btn/btn'
+import  Footer  from '../components/footer/footer'
 import styles from './download.module.css'
 import Image from 'next/image'
 
