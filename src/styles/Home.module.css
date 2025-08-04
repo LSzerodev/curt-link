@@ -1,0 +1,298 @@
+.Container{
+  width: 100%;
+  padding: 0 20px;
+}
+
+.Content{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  justify-content: center;
+  margin-top: 94px;
+  align-items: center;
+}
+
+.Content h2{
+  color: #B62D55;
+  font-size: 2rem;
+}
+
+.InputGroup {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  background-color: #e2e2e2;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 34px;
+}
+
+.input {
+  flex: 1;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding: 0 16px;
+  border-radius: 6px;
+  font-size: 16px;
+  background: transparent;
+  backdrop-filter: blur(17px);
+  color: #333;
+  font-family: "Sora", sans-serif;
+}
+
+.pasteButton {
+  height: 50px;
+  padding: 0 20px;
+  margin-left: 10px;
+  background: linear-gradient(-90deg, #C73967 0%, #FF89AC 100%);
+  box-shadow: 0px 1px 4px rgba(205, 67, 111, 0.48);
+
+  color: white;
+  font-weight: 300;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    font-family: "Sora", sans-serif;
+}
+
+.downloadButton {
+  height: 60px;
+  padding: 0px 75px;
+  margin-left: 10px;
+  background: linear-gradient(90deg, #DE376D 0%, #780C2E 100%);
+  color: white;
+  font-weight: 400;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0px 1px 11px rgba(205, 67, 111, 0.7);
+  margin-left: 34px;
+  font-family: "Sora", sans-serif;
+  font-size: 24px;
+}
+
+.clipboard{
+  margin-left: 8px;
+  padding: 5px 5px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.blockAds{
+  margin: auto;
+  width: 100%;
+  height: 24.625rem;
+  border-radius: 5px;
+  max-width: 1440px;
+  margin-top: 64px;
+  background-color: #B62D55;
+}
+
+.cards{
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  gap: 87px;
+}
+
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+  border: 2px solid #DED2D8;
+  width: 400px;
+  height: 220px;
+  background-color: #3D282F;
+  margin-top: 64px;
+}
+
+.card h4{
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #EEEEEE;
+}
+
+.card p{
+  text-align: center;
+  width: 300px;
+  color: #EEEEEE;
+}
+
+.desc{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  margin-top: 92px;
+  margin: auto;
+  margin-top: 88px;
+}
+
+.content{
+  text-align: center;
+}
+
+.content h1{
+  margin-bottom: 8px;
+  font-size: 64px;
+  font-weight: 400;
+  color: #353333;
+}
+
+.gratis{
+  color: #CD436F;
+}
+
+.content h3{
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.DescContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 88px;
+  
+
+  flex-wrap: wrap;
+}
+
+
+.contentText {
+  flex: 2;
+  font-family: "Sora", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.contentDesck{
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentText h2 {
+  font-size: 120px;
+  text-align: center;
+  font-weight: 200;
+  margin-bottom: 20px;
+  color: #4D4043;
+}
+
+.contentDesck ol {
+  list-style: none;
+  padding: 0;
+  margin-top: 88px;
+}
+
+.contentDesck li {
+  width: 100%;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 24px;
+  word-break: break-word; /* quebra caso venha link ou texto muito longo */
+}
+
+.contentDesck li:nth-child(1) strong {
+  font-size: 72px;
+  color: #844D60;
+  padding: 0 20px;
+}
+
+.contentDesck li:nth-child(2) strong {
+  font-size: 72px;
+  color: #773C4D;
+  padding: 0 20px;
+}
+
+.contentDesck li:nth-child(3) strong {
+  font-size: 72px;
+  color: #451421;
+  padding: 0 20px;
+}
+
+.foguetee{
+  transform: scaleX(-1);
+}
+.svg{
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 1280px){
+    .cards {
+    margin-top: 67px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .card {
+    width: calc(50% - 16px);
+    margin-top: 0;
+  }
+
+  .card:nth-child(3) {
+    width: 100%;
+    margin-top: 8px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .cards{
+    flex-direction: column;
+  }
+  .card{
+    width: 100%;
+
+  }
+
+  .InputGroup {
+    flex-wrap: wrap;
+  }
+
+  .input {
+    flex: 1;
+    min-width: 0;
+  }
+
+   .pasteButton {
+    margin-left: 10px;
+  }
+
+  .downloadButton {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 12px;
+  }
+
+  .contentDesck li {
+    font-size: 18px;
+    padding: 0 16px;
+  }
+
+  .contentText li strong {
+    font-size: 48px;
+  }
+
+  .contentText h2 {
+    font-size: 48px;
+  }
+}
