@@ -1,15 +1,17 @@
-import { ButtonHTMLAttributes, ReactNode } from 'react'
-import styles from './button.module.css'
+import { ButtonHTMLAttributes, ReactNode } from 'react';
+import styles from './button.module.css';
 
-type downloadButtonProp = {
-    children: ReactNode;
-    prop?: ButtonHTMLAttributes<HTMLButtonElement>
-}
+type DownloadButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
+  children: ReactNode;
+};
 
-export default function BtnDownload({children, prop } : downloadButtonProp){
-    return(
-        <>
-            <button type="submit" {...prop} className={styles.downloadButton}>{children}</button>
-        </>
-    ) 
+export default function BtnDownload({
+  children,
+  ...rest
+}: DownloadButtonProps) {
+  return (
+    <button {...rest} className={styles.downloadButton}>
+      {children}
+    </button>
+  );
 }

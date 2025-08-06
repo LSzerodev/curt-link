@@ -7,6 +7,14 @@ import like from '../img/svg/like.svg'
 import comments from '../img/svg/comments.svg'
 import share from '../img/svg/share.svg'
 
+type infoUserProp = {
+    username: string;
+    avatar: string;
+    description: string;
+    likes: number;
+    comments: number;
+    share: number;
+}
 
 export default function Download(){
     const donwload = [
@@ -65,7 +73,6 @@ export default function Download(){
                                 <BtnDownload key={index}>{item.title}</BtnDownload>
                             ))
                         }
-                        
                     </form>
                 </div>
             </div>
@@ -74,7 +81,7 @@ export default function Download(){
                         className="adsbygoogle"
                         style={{ display: "block" }}
                         data-ad-client="ca-pub-2589071339817154"
-                        data-ad-slot="auto" // Pode deixar "auto" ou usar um slot específico
+                        data-ad-slot="auto" 
                         data-ad-format="auto"
                         data-full-width-responsive="true"
                     ></ins>

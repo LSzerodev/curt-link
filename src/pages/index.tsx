@@ -6,7 +6,10 @@ import   Footer  from "./components/footer/footer";
 import infinity from './img/svg/infinity.svg'
 import eye from './img/svg/eye.svg'
 import mp4 from './img/svg/music.svg'
+import { useState } from "react";
 
+import axios from "axios";
+import { useRouter } from "next/router";
 
 export default function Home() {
 const cards = [
@@ -27,6 +30,14 @@ const cards = [
   }
 ]
 
+  const [url, setUrl] = useState('')
+
+  async function handleEnviarReq(e: React.FormEvent<HTMLFormElement>) {
+  e.preventDefault();
+    
+
+}
+
   return (
     <>
       <Head>
@@ -36,14 +47,16 @@ const cards = [
         <div className={styles.Content}>
 
         <h2>Baixar video tiktok</h2>
-        <form className={styles.InputGroup}>
+        <form className={styles.InputGroup} onSubmit={handleEnviarReq}>
           
             <input 
               type="text"
               className={styles.input}
+              value={url}
+              onChange={(e) => setUrl(e.target.value)}
               placeholder="Cole o link"
             />
-            <button type="button" className={styles.pasteButton}>Colar
+            <button type="button" className={styles.pasteButton} >Colar
                <span className={styles.clipboard}><TbClipboard color="#CF4571" size={18}/></span>
             </button>
             <button type="submit" className={styles.downloadButton}>Baixar</button>
