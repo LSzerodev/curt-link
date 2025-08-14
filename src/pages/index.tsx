@@ -31,9 +31,18 @@ const cards = [
 ]
 
   const [url, setUrl] = useState('')
-
+  const router = useRouter()
   async function handleEnviarReq(e: React.FormEvent<HTMLFormElement>) {
   e.preventDefault();
+  if(!url){
+    alert('preencha o campo!')
+    return
+  }
+  try{
+    router.push(`/download?url=${encodeURIComponent(url)}`)
+  }catch(err){
+    console.error(err)
+  }
     
 
 }
