@@ -45,7 +45,7 @@ export default function Download() {
                     setLoading(true);
                     setError(null);
                     // The API call happens here, on the client-side, after the page loads
-                    const response = await axios.post('http://localhost:3000', { url });
+                    const response = await axios.post('https://myapitiktok-production.up.railway.app', { url });
                     console.log(response)
                     
                     if (response.data && response.data.success) {
